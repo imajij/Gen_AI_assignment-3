@@ -1,0 +1,77 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+.streamlit/secrets.toml
+
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+*.streamlit.app
+
+# Persistent data / vector stores (do not commit ChromaDB files)
+data/
+data/vector_store/
+data/vector_store_test/
+
+# Uploads / generated outputs
+uploads/
+output/
+repro_results.json
+
+# Sample and large docs (usually not versioned)
+sample_data/
+
+# Logs
+*.log
+logs/
+
+# Cache / temp
+.cache/
+*.cache
+*.tmp
+*.bak
+temp/
+tmp/
+
+# Misc project artifacts not intended for repository
+tests/
+scripts/
+QUICKSTART.md
+ARCHITECTURE.md
+UPGRADE_GUIDE.md
+validate_setup.py
+examples.py
+PROJECT_MANIFEST.py
