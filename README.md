@@ -118,6 +118,10 @@ streamlit run app.py
 
 This project is optimized for Streamlit Community Cloud using temporary vector storage.
 
+Use Python 3.12 in Streamlit Community Cloud's **Advanced settings** when deploying
+this app. Several ML/document-processing dependencies are sensitive to the Python
+runtime selected by Streamlit Cloud.
+
 * Persistent long-term storage is NOT required
 * Session data is automatically ephemeral
 * ChromaDB uses `/tmp/vector_store`
