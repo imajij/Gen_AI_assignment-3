@@ -35,7 +35,7 @@ class EmbeddingStore:
     Each logical source (file, session) can map to its own Chroma collection.
     """
 
-    def __init__(self, persist_dir: str = "./data/vector_store", model_name: str = "all-MiniLM-L6-v2"):
+    def __init__(self, persist_dir: str = "./data/vector_store", model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
         self.persist_dir = persist_dir
         self.model_name = model_name
 

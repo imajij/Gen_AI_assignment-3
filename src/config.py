@@ -18,7 +18,7 @@ def load_config() -> AppConfig:
     base_url = os.getenv("BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai/")
     api_key = os.getenv("API_KEY", os.getenv("OPENAI_API_KEY", ""))
     model = os.getenv("MODEL", "gemma-4-26b-a4b-it")
-    embedding_model = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
+    embedding_model = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
     vector_store_path = os.getenv("VECTOR_STORE_PATH", "./data/vector_store")
 
     return AppConfig(
